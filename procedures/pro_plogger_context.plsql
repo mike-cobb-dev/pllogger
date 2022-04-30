@@ -10,6 +10,11 @@ create or replace procedure pro_pllogger_context is
             'pllogger',
             'env',
             'devl' );
+        elsif l_context = 2 then
+            DBMS_SESSION.SET_CONTEXT (
+            'pllogger',
+            'env',
+            'beta' );
         else
             DBMS_SESSION.SET_CONTEXT (
             'pllogger',
