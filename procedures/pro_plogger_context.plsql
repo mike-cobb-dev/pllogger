@@ -14,7 +14,7 @@ create or replace procedure pro_pllogger_context is
             DBMS_SESSION.SET_CONTEXT (
             'pllogger',
             'env',
-            'beta' );
+            'beta', );
         else
             DBMS_SESSION.SET_CONTEXT (
             'pllogger',
